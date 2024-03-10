@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink, Outlet} from 'react-router-dom';
 
-import '../App.css';
+import '../css/global.css';
 
 
 export default function RootLayout() {
@@ -11,7 +11,7 @@ export default function RootLayout() {
                 <div className="logo"></div>
                 <nav className="nav">
                     <NavLink to="/" className='header-link'>HOME</NavLink>
-                    <NavLink to="pages/Dates" className='header-link'>DATES</NavLink>
+                    <NavLink to="pages/Dates" className='header-link'>PROJECT: DATES</NavLink>
                 </nav>
             </header>
             <main>

@@ -1,0 +1,75 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+  /* border: 1px solid #FFD700; */
+}
+
+.logo {
+  font-weight: bold;
+  position:absolute;
+  left: 2vh;
+  /* background-image: '../images/home-icon.jpg'; */
+}
+
+/* Header */
+.header {
+  padding: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ffd900a0; /* Yellow color */
+  font-size: em;
+  letter-spacing: 0.4em;
+  box-shadow: none; /* Turn off the box shadow */
+  background-image: url('../images/home1.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+
+.header-link {
+  margin: 0 30px;
+  padding: 5px 0;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+/* Underline Header */
+.header-link::before,
+.header-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-image: linear-gradient(#ffd900a0, #ffd900a0);
+  background-position: 0 100%;
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  transition: width 0.3s, background-size 0.3s, background-position 0s 0.3s;
+}
+
+.header-link::before {
+  bottom: -1px; /* Adjust the distance between lines */
+
+}
+
+.header-link::after {
+  transition-delay: 0.1s; /* Add a delay to the transition of the bottom line */
+  bottom: -4px; /* Adjust the distance between lines */
+}
+
+.header-link:hover::before,
+.header-link:hover::after {
+  width: 100%;
+  background-size: 100% 1px;
+}
+

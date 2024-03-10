@@ -1,0 +1,435 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    color: #efe7e7;
+    text-align: center;
+    cursor: url('../images/cursor.png'), auto;
+
+}
+
+p {
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.title {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+/* ------------ Progress Bar */
+#progress-bar {
+    height: 8px;
+    background: #FF4B4B;
+    width: 0%;
+    position: fixed;
+    top: 45px;
+    z-index: 1;
+}
+
+
+/* ------------ Section Hero */
+#section-hero {
+    background-image: url('../images/background2.jpg');
+    /* background-image: #fec89a; */
+    height: 70vh;
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+
+
+}
+
+#section-hero img {
+    display: block;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+
+}
+
+#aaron {
+    margin-top: 0;
+    color: #f2f2f2;
+    -webkit-animation: focus-in-expand 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.1s both;
+    animation: focus-in-expand 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s both;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#education {
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+    color: #f2f2f2;
+    -webkit-animation: focus-in-expand 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.6s both;
+    animation: focus-in-expand 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.9s both;
+    font-weight: 00;
+    font-size: 24px;
+
+}
+
+/* Section Body */
+.section-body {
+    padding: 60px 0px;
+}
+
+/* ---------- About Section */
+/* About Text */
+#about-text {
+    font-size: 1.5em;
+}
+
+/* Circular Image */
+.circle {
+    border-radius: 50%;
+}
+
+
+
+#section-about {
+    background-image: linear-gradient(#f6a4a8, #A5ABCD);
+    /* background-image: #fec89a; */
+
+}
+
+#portrait {
+    z-index: auto;
+}
+
+/* ------------ Skills Section */
+#section-skills {
+    background-image: linear-gradient(#A5ABCD, #5C6FA1);
+}
+
+/* Cards */
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0 20px 0;
+}
+
+
+.row.card-container {
+    padding: 20px 0 20px 0;
+    justify-content: space-between;
+}
+
+.card {
+    width: 230px;
+    height: 175px;
+    background-color: white;
+    box-shadow: 0 0 5px #21130d;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    color: #21130d;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    background-color: #fceeee;
+}
+
+.card img {
+    width: 70px;
+    padding-bottom: 30px;
+
+}
+
+.card h5 {
+    margin-top: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+#html {
+    border-bottom: 4px solid #f19e29;
+}
+
+#css {
+    border-bottom: 4px solid #29a8e0;
+}
+
+#js {
+    border-bottom: 4px solid #8acf17;
+}
+
+#python {
+    border-bottom: 4px solid #fcdc62;
+}
+
+#react {
+    border-bottom: 4px solid #68dcfc;
+}
+
+/* Projects */
+#section-projects {
+    background-image: linear-gradient(#5C6FA1, #DB5461);
+    height: auto;
+    padding-bottom: 200px;
+}
+
+.project-card {
+    height: 300px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.project-details {
+    padding: 5px 10px;
+    font-size: 1rem;
+
+}
+
+.project-btn {
+    margin-bottom: 20px;
+}
+
+.card .project-skill-icons {
+    width: 30px;
+    align-self: flex-end;
+    padding: 0;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+/* Modal */
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #8a8d8f;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    /* Could be more or less, depending on screen size */
+    
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.caption-margin {
+    padding: 202px, 0, 1000px, 0;
+}
+
+
+/* Footer */
+.footer-nav {
+    background-color: #333;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    color: #f2f2f2;
+}
+
+.footer-nav h5 {
+    font-weight: 400;
+    padding: 13px;
+    margin: 0;
+    font-size: 0.7em;
+}
+
+#footer-icons {
+    width: 263px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#footer-icons a {
+    padding-top: 8px;
+    width: 100px;
+}
+
+#footer-icons a:hover {
+    background-color: #21130d;
+}
+
+#footer-icons a img {
+    width: 25px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* ------------- Animations */
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+    transform: translateX(-30%);
+    filter: blur(3px);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+
+/* Stagger Logos */
+.logo:nth-child(2) {
+    transition-delay: 300ms;
+}
+
+.logo:nth-child(3) {
+    transition-delay: 600ms;
+}
+
+/* Stagger Skill Cards */
+.scard:nth-child(2) {
+    transition-delay: 250ms;
+}
+
+.scard:nth-child(3) {
+    transition-delay: 500ms;
+}
+
+.scard:nth-child(3) {
+    transition-delay: 500ms;
+}
+
+.scard:nth-child(4) {
+    transition-delay: 750ms;
+}
+
+.scard:nth-child(5) {
+    transition-delay: 1000ms;
+}
+
+
+/* Stagger Project Cards */
+.pcard:nth-child(2) {
+    transition-delay: 250ms;
+}
+
+.pcard:nth-child(3) {
+    transition-delay: 500ms;
+}
+
+/* Expand */
+@-webkit-keyframes focus-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes focus-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+/* Flipping Cards */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    perspective: 1000px;
+    width: 100%;
+    height: 300px;
+    background-color: transparent;
+    margin-top: 30px;
+
+    /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    background-color: transparent;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: transparent;
+    color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: transparent;
+    color: white;
+    transform: rotateY(180deg);
+}

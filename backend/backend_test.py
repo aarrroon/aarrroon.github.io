@@ -23,7 +23,7 @@ def test_backend(url):
 # Establish Data Connection
 def connect_postgres(url):
     try:
-        connection = psycopg2.connect(POSTGRES_URL)
+        connection = psycopg2.connect(url)
         cursor = connection.cursor()
         print('Postgres connection successful!')
         return connection, cursor
@@ -51,7 +51,7 @@ def get_test_data():
 
 
 if __name__ == '__main__':
-    # test_backend(DATABASE_URL)
+    test_backend(DATABASE_URL)
     connection, cursor = connect_postgres(POSTGRES_URL)
 
     app.run()
