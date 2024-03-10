@@ -1,0 +1,175 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+  /* border: 1px solid #FFD700; */
+}
+
+/* Header */
+.header {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ffd900a0; /* Yellow color */
+  font-size: em;
+  letter-spacing: 0.4em;
+  box-shadow: none; /* Turn off the box shadow */
+  background-image: url('./home1.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+
+.header-link {
+  margin: 3.5vh 30px;
+  padding: 10px 0;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+/* Underline Header */
+.header-link::before,
+.header-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-image: linear-gradient(#ffd900a0, #ffd900a0);
+  background-position: 0 100%;
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  transition: width 0.3s, background-size 0.3s, background-position 0s 0.3s;
+}
+
+.header-link::before {
+  bottom: -3px; /* Adjust the distance between lines */
+
+}
+
+.header-link::after {
+  transition-delay: 0.1s; /* Add a delay to the transition of the bottom line */
+  bottom: -6px; /* Adjust the distance between lines */
+}
+
+.header-link:hover::before,
+.header-link:hover::after {
+  width: 100%;
+  background-size: 100% 1px;
+}
+
+
+
+.logo {
+  font-weight: bold;
+  position:absolute;
+  left: 2vh;
+  background-image: 'home-icon.jpg';
+}
+
+#header-hero {
+  background-image: url('home.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero {
+  
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content {
+  padding: 50px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #ffbb00;
+  color: #000;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #f8a800;
+}
+
+.about-section,
+.menu-section,
+.reservations-section,
+.contact-section {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.about-content,
+.menu-content,
+.reservations-content,
+.contact-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-item {
+  margin: 0 20px;
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.menu-item h3 {
+  margin-top: 20px;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Golden Lines */
+/* App.css */
+
+/* Create a class for the golden border container */
+
+/* Lines */
+.line {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 1px; /* Adjust the width of the lines */
+  background-color: #ffd900a0; /* Adjust the color of the lines */
+}
+
+.left-line {
+  left: 10vh; /* Distance from the left edge */
+}
+
+.right-line {
+  right: 10vh; /* Distance from the right edge */
+}
+
