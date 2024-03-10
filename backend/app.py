@@ -18,6 +18,8 @@ def hello():
 def get_test_data():
     # Connect to the database
     # Execute SQL query to select test data
+    connection, cursor = connect_postgres(POSTGRES_URL)
+
     cursor.execute("SELECT * FROM POI")
 
     # Fetch all rows
@@ -36,7 +38,7 @@ def get_test_data():
 # Establish Data Connection
 def connect_postgres(url):
     try:
-        connection = psycopg2.connect(POSTGRES_URL)
+        connection = psycopg2.connect(url)
         cursor = connection.cursor()
         print('Postgres connection successful!')
         return connection, cursor
@@ -52,4 +54,5 @@ if __name__ == '__main__':
     print(port)
     app.run(host="0.0.0.0", port=port)
 
+    # app.run()
     connection, cursor = connect_postgres(POSTGRES_URL)
