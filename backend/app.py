@@ -78,9 +78,9 @@ def get_poi():
 
 app.run()
 if __name__ == '__main__':
-    port = int(os.getenv('PORT'), 5000)
-    print(port)
-    app.run(host="0.0.0.0", port=port)
+    # port = int(os.getenv('PORT'), 5000)
+    # print(port)
+    # app.run(host="0.0.0.0", port=port)
 
-    # app.run()
-    connection, cursor = connect_postgres(POSTGRES_URL)
+    app.run()
+    # connection, cursor = connect_postgres(POSTGRES_URL)
